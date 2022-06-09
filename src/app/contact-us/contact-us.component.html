@@ -1,0 +1,54 @@
+<div class="container">
+
+    <form [formGroup]="feedbackForm">
+
+        <mat-form-field>
+            <input matInput placeholder="Enter your email" formControlName="email">
+            <!-- <mat-hint *ngIf="'loginForm.controls.email.errors'">Not a valid email</mat-hint> -->
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Actor</mat-label>
+            <mat-select formControlName="actor">
+              <mat-option value="one">Volunteer</mat-option>
+              <mat-option value="two">Patient</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Feedback</mat-label>
+            <textarea matInput formControlName="feedback"></textarea>
+        </mat-form-field>    
+
+    </form>
+
+    <!-- <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="medifolks@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field> -->
+
+    <div mat-dialog-actions [align]="'end'"><button mat-raised-button color="warn" (click)="onClick()">Submit</button></div>
+      
+</div>
+
+<div class="foot">
+    <div class="left">
+        <img src="assets/img/logo.png">
+        <h2>MediFolks</h2>
+    </div>
+
+    <div class="middle">
+        <h3><fa-icon [icon]="faHouse"></fa-icon>Ofiice Address</h3>
+        <p>House#202, Avenue#2, Section#6 <br>Mirpur, Dhaka</p>
+        <h3><fa-icon [icon]="faEmail"></fa-icon>Email Us</h3>
+        <p>medifolks@gmail.com</p>
+    </div>
+
+    <div class="right">
+        <h3><fa-icon [icon]="faRightToBracket"></fa-icon>Call Us</h3>
+        <p>+8801725569583</p>
+    </div>
+
+    <p id="footer">Copyright © 2022 MediFolks. All Rights Reserved.</p>
+</div>

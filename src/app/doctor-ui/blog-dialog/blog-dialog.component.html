@@ -1,0 +1,17 @@
+<h1>Blog Writting</h1>
+
+<form [formGroup]="blogForm">
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Content</mat-label>
+            <textarea matInput formControlName="content"></textarea>
+        </mat-form-field>
+    </div>
+</form>
+
+<div mat-dialog-actions [align]="'center'"><button mat-raised-button color="accent" [style]="'width: 100%'" (click)="onPost()">Post</button></div>

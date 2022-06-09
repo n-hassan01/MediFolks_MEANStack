@@ -1,0 +1,57 @@
+.container{
+    background-color: rgb(69, 69, 69);
+    height: auto;
+    width: 50%;
+    padding: 35px;
+    margin-top: 65px;
+}
+
+mat-form-field {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+
+.foot{
+    background-color: crimson;
+    color: antiquewhite;
+    height: 300px;
+    margin-top: 70px;
+}
+
+.left, .middle, .right{
+    position: relative;
+    display: block;
+    /* border: 2px solid black; */
+    width: 40%;
+    text-align: center;
+}
+
+.middle, .right{
+    float: right;
+    margin-top: -125px;
+}
+
+.left img{
+    height: 100px;
+    margin-top: 40px;
+}
+
+.left{
+    text-align: center;
+    width: 20%;
+}
+
+.right h3 fa-icon{
+    padding-right: 5px;
+}
+
+.middle h3 fa-icon{
+    padding-right: 5px;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 105px;
+}
